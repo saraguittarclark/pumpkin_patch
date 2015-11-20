@@ -1,0 +1,67 @@
+li {
+	list-style-type: none;
+}
+
+.landing-images li {
+	display: inline-block;
+	padding: 20px;
+	text-align: center;
+
+	@media (min-width: 1024px) {
+		padding: 20px;
+	}
+
+	@media (max-width: 650px) {
+		padding: 5px;
+	}
+}
+
+
+.nav {
+	display: inline-block;
+}
+
+.drop {
+	list-style-type: none;
+	background-color: #FFFFFF;
+    border-radius: 4px;
+    display: none; /* on hover displayed */
+    margin-left: 0px;
+    position: absolute;
+    min-width: 300px;
+    z-index: 999; /* moves to "top" */
+    padding-left: 5px; /* removes default button padding */
+    	p{
+    		margin-bottom: 0px;
+    	}
+} /* settings dropdown menu! hidden first. absolute display - relative to gear */
+
+.menu:hover .drop {
+	display: block;
+} /* on gear hover, the dropdown is revealed */
+
+.menu:hover .drop li {
+//    display: inline-block;
+    list-style-type: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+} /* on gear hover, the dropdown li appear as such  - padding between the li lines, no decoration  */
+
+//.drop ul {
+//	display: inline-block;
+//}
+
+.dropdown {
+	line-height: 0px;
+	list-style-type: none;
+}
+
+.menu {
+	list-style-type: none;
+	margin-left: 0;
+}
+
+.menu > li {
+	display: inline-block;
+}
+
