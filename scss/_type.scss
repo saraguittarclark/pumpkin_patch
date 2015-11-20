@@ -1,0 +1,43 @@
+.-primary {
+	color: $white;
+	font-weight: lighter;
+	padding: 30px;
+
+	a {
+		color: $white;
+	}
+
+	a:hover {
+		color: $smoke;
+	}
+
+	li {
+		list-style-type: none;
+	}
+}
+
+h1 {
+	img {
+		vertical-align: -5px;
+	}
+}
+
+
+.edge--bottom--reverse a {
+	float: right;
+}
+
+.marketing {
+	float: right;
+	text-align: right;
+
+	@media (max-width: 500px) {
+		text-align: center;
+	}
+}
+
+@media (max-width: 1024px) {
+	.large-1 {
+		display: none;
+	}
+}
