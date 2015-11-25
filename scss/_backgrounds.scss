@@ -76,3 +76,10 @@
 .leaves-back .row {
 	background-color: lighten($primary-color, 40%);
 }
+
+.detail {
+	background-color: $silver;
+	border-radius: 8px;
+	margin-bottom: 15px;
+	padding-top: 20px;
+}
