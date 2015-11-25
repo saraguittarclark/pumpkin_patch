@@ -4,3 +4,71 @@
 	background-size: cover;
 	padding: 80px;
 }
+
+.leaves-back {
+	background-color: $smoke;
+	background: url("images/leaves-back.png") no-repeat;
+	background-size: cover;
+	padding: 80px;
+}
+
+.row {
+	min-width: 270px;
+
+}
+
+.product {
+	background-color: $white;
+	border-radius: 8px;
+	height: 375px;
+	width: 220px;
+	position: relative;
+	float: left;
+	word-wrap: normal;
+	margin: 15px;
+	padding: 10px;
+
+	p {
+		margin-bottom: 0px;
+	}
+
+	@media (max-width: 600px) {
+		height: 200px;
+		width: 240px;
+		float: left;
+		img {
+			float: left;
+			width: 50%;
+		}
+		h5 {
+			font-size: 1rem;
+			font-weight: bolder;
+			margin-left: 5px;
+		}
+		p {
+			position: absolute;
+			top: 125px;
+		}
+
+
+	}
+}
+
+.inner {
+	position: absolute;
+	width: 100%;
+	@media (max-width: 600px) {
+		position: relative;
+		width: 100%;
+	}
+}
+
+.pumpkin-header {
+	background-color: $smoke;
+	background: url("images/pumpkins_head.png") no-repeat;
+	background-size: cover;
+}
+
+.leaves-back .row {
+	background-color: lighten($primary-color, 40%);
+}

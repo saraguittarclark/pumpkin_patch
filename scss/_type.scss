@@ -1,18 +1,27 @@
 .-primary {
-	color: $white;
+	// color: $white;
 	font-weight: lighter;
-	padding: 30px;
+	padding-top: 5px;
+	padding-bottom: 20px;
 
 	a {
-		color: $white;
+		color: $primary-color;
 	}
 
 	a:hover {
-		color: $smoke;
+		color: $steel;
 	}
 
 	li {
 		list-style-type: none;
+	}
+	@media (max-width: 600px) {
+		background: lighter($primary-color, 60%);
+		margin: 0px;
+		padding: 10px;
+		h5, a {
+			font-size: 15px;
+		}
 	}
 }
 
@@ -22,10 +31,10 @@ h1 {
 	}
 }
 
-
-.edge--bottom--reverse a {
-	float: right;
+.shadow {
+	text-shadow: 2px 2px $primary-color;
 }
+
 
 .marketing {
 	float: right;
@@ -40,4 +49,41 @@ h1 {
 	.large-1 {
 		display: none;
 	}
+}
+
+.pumpkin-header-text {
+	h1, h2, h3 {
+	color: $white;
+	text-align: right;
+	}
+}
+
+#cart {
+	text-align: right;
+}
+
+.active a {
+	color: $secondary-color;
+}
+
+.button-group {
+  position: relative;
+  display: inline-block;
+  margin: 1rem 0;
+  &:before {
+    content: attr(data-grouptype);
+    z-index: 99999;
+    color: #999;
+    display: block;
+    font-size: 1rem;
+    padding: 0.25em;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    left: 42.5%;
+    top: 0.35rem;
+  }
+  button + button {
+    margin-left: 4px;
+  }
 }

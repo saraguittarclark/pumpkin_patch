@@ -2,26 +2,16 @@ li {
 	list-style-type: none;
 }
 
-.landing-images li {
-	display: inline-block;
-	padding: 20px;
-	text-align: center;
-
-	@media (min-width: 1024px) {
-		padding: 20px;
-	}
-
-	@media (max-width: 650px) {
-		padding: 5px;
-	}
+.medium-3 {
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
-
 
 .nav {
 	display: inline-block;
 }
 
-.drop {
+.dropit {
 	list-style-type: none;
 	background-color: #FFFFFF;
     border-radius: 4px;
@@ -36,22 +26,18 @@ li {
     	}
 } /* settings dropdown menu! hidden first. absolute display - relative to gear */
 
-.menu:hover .drop {
+.menu:hover .dropit {
 	display: block;
 } /* on gear hover, the dropdown is revealed */
 
-.menu:hover .drop li {
+.menu:hover .dropit li {
 //    display: inline-block;
     list-style-type: none;
     padding-top: 5px;
     padding-bottom: 5px;
 } /* on gear hover, the dropdown li appear as such  - padding between the li lines, no decoration  */
 
-//.drop ul {
-//	display: inline-block;
-//}
-
-.dropdown {
+.dropdownit {
 	line-height: 0px;
 	list-style-type: none;
 }
@@ -65,3 +51,13 @@ li {
 	display: inline-block;
 }
 
+ul .buttons {
+	display: inline-block;
+	margin: 4px;
+	padding: 5px;
+}
+
+.inline-block li {
+	display: inline-block;
+	padding: 5px;
+}

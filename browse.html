@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pumpkin Patch | Our Selection</title>
     <link rel="stylesheet" href="css/app.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="js/modernizr/modernizr.js"></script>
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/ico" href="images/favicon.ico">
@@ -15,192 +15,272 @@
 <body>
 
 <!--HEADER-->
-<div class="row">
-	<div class="large-12 columns">
-		<h1><img src="images/Pumpkin-icon-dark.png">Pumpkin Patch</h1>
-        <h2>We bring the magic of autumn to you!</h2>
-        <h3>1/2 off shipping for New Customers!</h3>
-	</div>
-</div>
+<div class="pumpkin-header">
+	<div class="row">
+		<div class="large-12 columns pumpkin-header-text">
+			<h1 class="shadow"><img src="images/Pumpkin-icon.png">Pumpkin Patch</h1>
+	        <h2 class="shadow">We bring the magic of autumn to you!</h2>
+	        <h3 class="shadow">1/2 off shipping for New Customers!</h3>
+		</div><!--/12-->
+	</div><!--/row-->
+</div><!--/pumpkin-->
 
 <!--NAV BAR-->
-<div class="row edge--bottom--reverse">
-	<div class="large-12 columns">
-		<div class="large-2 columns nav">
-			<ul class="menu">
-				<li><h4>Filter</h4><!--DROPDOWN-->
-					<ul class="dropdown">
-						<li>
-							<ul class="drop"><!--DROPDOWN-->
-								<li>
-									<p>Size:    <!--SIZE SORT--><a href="">Small</a> | <a href="">Medium</a> | <a href="">Large</a> | <a href="">Jumbo</a></p>
-								</li>
-								<li>
-									<p>Color:    <!--COLOR SORT--><a href="">Orange</a> | <a href="">Green</a> | <a href="">White</a></p></li>
-								<li><a href="" class="active">No Filter</a></li>
-							</ul><!--/drop-->
-						</li>
-					</ul><!--/Dropdown-->
-				</li>
-			</ul>
-		</div>
-		<div class="large-4 columns">
-			<h4><a href="#">Sign In</a></h4>
-		</div><!--/6-->
-		<div class="large-6 columns">
-			<h3>Cart (0)</h3>
-		</div>
-	</div><!--/top 12 columns-->
-</div><!--/row-->
+<div class="edge--bottom--reverse -primary">
+	<div class="row">
+		<div class="large-12 columns">
+			<div class="small-2 large-2 columns nav">
+				<ul class="menu">
+					<li><h5>Filter</h5><!--DROPDOWN-->
+						<ul class="dropdownit">
+							<li>
+								<ul class="dropit"><!--DROPDOWN-->
+									<li>
+										<ul class="inline-block"><p>Size:</p>
+											<li><a href="">Small</a></li>
+											<li><a href="">Medium</a></li>
+											<li><a href="">Large</a></li>
+											<li><a href="">Jumbo</a></li>
+										</ul>
+									</li>
+									<li>
+										<ul class="inline-block"><p>Color:</p>
+											<li><a href="">Orange </a></li>
+											<li><a href="">Green </a></li>
+											<li><a href="">White </a></li>
+										</ul>
+									<li><a href="" class="active">No Filter</a></li>
+								</ul><!--/drop-->
+							</li>
+						</ul><!--/Dropdown-->
+					</li>
+				</ul>
+			</div><!--/2-->
+			<div class="small-3 large-2 columns">
+				<h5><a href="#">Sign In</a></h5>
+			</div><!--/4-->
+			<div class="small-7 large-8 columns">
+				<h5 id="cart">Cart (0)</h5>
+			</div><!--/6-->
+		</div><!--/top 12 columns-->
+	</div><!--/row-->
+</div><!--edge bottom reverse-->
 
 <!--ROW 1-->
-<div class="row">
-	<!--PRODUCT CARD-->
-	<div class="large-4 columns product">
-		<img src="images/baby-bear.png" alt="Baby Bear">
-		<h5>Baby Bear</h5>
-		<p>Small<br>Great for little hands!</p>
-		<a href="#" class="small round button">Learn More</a><a href="#" class="small round button">Add to Cart</a>
-	</div><!--/product card-->
-	<!--PRODUCT CARD-->
-	<div class="large-4 columns product">
-		<img src="images/big-rock.png" alt="Big Rock">
-		<h5>Big Rock</h5>
-		<p>Large<br>Great for Jack O'Lanterns!</p>
-		<a href="#" class="small round button">Learn More</a><a href="#" class="small round button">Add to Cart</a>
-	</div><!--/product card-->
-	<!--PRODUCT CARD-->
-	<div class="large-4 columns product">
-		<img src="images/casparita.png" alt="Casperita">
-		<h5>Casperita</h5>
-		<p>Small<br>Perfect for accenting a distinctive <br>and special decorative display.</p>
-		<a href="#" class="small round button">Learn More</a><a href="#" class="small round button">Add to Cart</a>
-	</div><!--/product card-->
-</div><!--/row-->
-<!--ROW 2-->
-<div class="row">
-	<!--PRODUCT CARD-->
-	<div class="large-4 columns product">
-		<img src="images/champion.png" alt="Champion">
-		<h5>Champion</h5>
-		<p>Jumbo<br>For the best Jack O'Lanterns!</p>
-		<a href="#" class="small round button">Learn More</a><a href="#" class="small round button">Add to Cart</a>
-	</div><!--/product card-->
-	<!--PRODUCT CARD-->
-	<div class="large-4 columns product">
-		<img src="images/fall-splendor.png" alt="Fall Splendor">
-		<h5>Fall Splendor</h5>
-		<p>Medium<br>Smooth skin and shapely stems make <br>this variety a family favorite.</p>
-		<a href="#" class="small round button">Learn More</a><a href="#" class="small round button">Add to Cart</a>
-	</div><!--/product card-->
-	<!--PRODUCT CARD-->
-	<div class="large-4 columns product">
-		<img src="images/flatso.png" alt="Flatso">
-		<h5>Flatso</h5>
-		<p>Large<br>Fantastic for alternative Jack O'Lantern <br>designs or as part of a lovely decorative display.</p>
-		<a href="#" class="small round button">Learn More</a><a href="#" class="small round button">Add to Cart</a>
-	</div><!--/product card-->
-</div><!--/row-->
-<!--ROW 3-->
-<div class="row">
-	<!--PRODUCT CARD-->
-	<div class="large-4 columns product">
-		<img src="images/jarrahdale.png" alt="Jarrahdale Large">
-		<h5>Jarrahdale Large</h5>
-		<p>Jumbo<br>Beautiful light green color, <br>no need to paint this stunner!</p>
-		<a href="#" class="small round button">Learn More</a><a href="#" class="small round button">Add to Cart</a>
-	</div><!--/product card-->
-	<!--PRODUCT CARD-->
-	<div class="large-4 columns product">
-		<img src="images/knuckle-head.png" alt="Knucklehead">
-		<h5>Knucklehead</h5>
-		<p>Medium<br>Sure to Delight! Use as decoration <br>or as a Jack O'Lantern.</p>
-		<a href="#" class="small round button">Learn More</a><a href="#" class="small round button">Add to Cart</a>
-	</div><!--/product card-->
-	<!--PRODUCT CARD-->
-	<div class="large-4 columns product">
-		<img src="images/marina-di-chioggia.png" alt="Marina Di Chioggia">
-		<h5>Marina di Chioggia</h5>
-		<p>Medium<br>Perfect for a distinctive decorative <br>display!</p>
-		<a href="#" class="small round button">Learn More</a><a href="#" class="small round button">Add to Cart</a>
-	</div><!--/product card-->
-</div><!--/row-->
-<!--ROW 4-->
-<div class="row">
-	<!--PRODUCT CARD-->
-	<div class="large-4 columns product">
-		<img src="images/munchkin.png" alt="Munchkin">
-		<h5>Munchkin</h5>
-		<p>Small<br>A classic family favorite.</p>
-		<a href="#" class="small round button">Learn More</a><a href="#" class="small round button">Add to Cart</a>
-	</div><!--/product card-->
-	<!--PRODUCT CARD-->
-	<div class="large-4 columns product">
-		<img src="images/new-england-pie-o.png" alt="New England Pie">
-		<h5>New England Pie</h5>
-		<p>Medium - ORGANIC<br>Our premium baking pumpkin.</p>
-		<a href="#" class="small round button">Learn More</a><a href="#" class="small round button">Add to Cart</a>
-	</div><!--/product card-->
-	<!--PRODUCT CARD-->
-	<div class="large-4 columns product">
-		<img src="images/polar-bear.png">
-		<h5>Polar Bear</h5>
-		<p>Large<br>Perfect for decorative displays.</p>
-		<a href="#" class="small round button">Learn More</a><a href="#" class="small round button">Add to Cart</a>
-	</div><!--/product card-->
-</div><!--/row-->
-<!--ROW 5-->
-<div class="row">
-	<!--PRODUCT CARD-->
-	<div class="large-4 columns product">
-		<img src="images/racer.png" alt="Racer">
-		<h5>Racer</h5>
-		<p>Large to Jumbo<br>Perfect for Jack O'Lanterns!</p>
-		<a href="#" class="small round button">Learn More</a><a href="#" class="small round button">Add to Cart</a>
-	</div><!--/product card-->
-	<!--PRODUCT CARD-->
-	<div class="large-4 columns product">
-		<img src="images/rouge-vif-detampes.png" alt="Rouge Vif Detampes">
-		<h5>Rouge vif d'Etampes</h5>
-		<p>Jumbo<br>Beautiful red-orange color is sure to please.</p>
-		<a href="#" class="small round button">Learn More</a><a href="#" class="small round button">Add to Cart</a>
-	</div><!--/product card-->
-	<!--PRODUCT CARD-->
-	<div class="large-4 columns product">
-		<img src="images/speckled-hound.png" alt="Speckled Hound">
-		<h5>Speckled Hound</h5>
-		<p>Medium<br>Perfect for a distinctive decorative <br>display.</p>
-		<a href="#" class="small round button">Learn More</a><a href="#" class="small round button">Add to Cart</a>
-	</div><!--/product card-->
-</div><!--/row-->
+<div class="leaves-back">
+	<div class="row">
+		<!--PRODUCT CARD change 4 to 3 and resize pictures??-->
+		<div class="product">
+			<div class="inner">
+				<img src="images/baby-bear.png" alt="Baby Bear">
+				<h5>Baby Bear</h5>
+				<p>Small<br>Great for little hands!</p>
+				<div class="button-group" data-grouptype="OR">
+					<button href="#" class="small button primary radius">Buy it now</button>
+					<button href="#" class="small button primary radius">Learn More</button>
+				</div>
+			</div><!--/inner-->
+		</div><!--/product card-->
+		<!--PRODUCT CARD-->
+		<div class="product">
+			<div class="inner">
+				<img src="images/big-rock.png" alt="Big Rock">
+				<h5>Big Rock</h5>
+				<p>Large<br>Great for Jack O'Lanterns!</p>
+				<div class="button-group" data-grouptype="OR">
+					<button href="#" class="small button primary radius">Buy it now</button>
+					<button href="#" class="small button primary radius">Learn More</button>
+				</div>
+			</div><!--/inner-->
+		</div><!--/product card-->
+		<!--PRODUCT CARD-->
+		<div class="product">
+			<div class="inner">
+				<img src="images/casparita.png" alt="Casperita">
+				<h5>Casperita</h5>
+				<p>Small<br>Perfect for decorating.</p>
+				<div class="button-group" data-grouptype="OR">
+					<button href="#" class="small button primary radius">Buy it now</button>
+					<button href="#" class="small button primary radius">Learn More</button>
+				</div>
+			</div><!--/inner-->
+		</div><!--/product card-->
+		<!--PRODUCT CARD-->
+		<div class="product">
+			<div class="inner">
+				<img src="images/champion.png" alt="Champion">
+				<h5>Champion</h5>
+				<p>Jumbo<br>The best Jack O'Lanterns!</p>
+				<div class="button-group" data-grouptype="OR">
+					<button href="#" class="small button primary radius">Buy it now</button>
+					<button href="#" class="small button primary radius">Learn More</button>
+				</div>
+			</div><!--/inner-->
+		</div><!--/product card-->
+		<!--PRODUCT CARD-->
+		<div class="product">
+			<div class="inner">
+				<img src="images/fall-splendor.png" alt="Fall Splendor">
+				<h5>Fall Splendor</h5>
+				<p>Medium<br>A family favorite.</p>
+				<div class="button-group" data-grouptype="OR">
+					<button href="#" class="small button primary radius">Buy it now</button>
+					<button href="#" class="small button primary radius">Learn More</button>
+				</div>
+			</div><!--/inner-->
+		</div><!--/product card-->
+		<!--PRODUCT CARD-->
+		<div class="product">
+			<div class="inner">
+				<img src="images/flatso.png" alt="Flatso">
+				<h5>Flatso</h5>
+				<p>Large<br>Great for a Jack O'Lantern.</p>
+				<div class="button-group" data-grouptype="OR">
+					<button href="#" class="small button primary radius">Buy it now</button>
+					<button href="#" class="small button primary radius">Learn More</button>
+				</div>
+			</div><!--/inner-->
+		</div><!--/product card-->
+		<!--PRODUCT CARD-->
+		<div class="product">
+			<div class="inner">
+				<img src="images/jarrahdale.png" alt="Jarrahdale Large">
+				<h5>Jarrahdale Large</h5>
+				<p>Jumbo<br>Beautiful light green color!</p>
+				<div class="button-group" data-grouptype="OR">
+					<button href="#" class="small button primary radius">Buy it now</button>
+					<button href="#" class="small button primary radius">Learn More</button>
+				</div>
+			</div><!--/inner-->
+		</div><!--/product card-->
+		<!--PRODUCT CARD-->
+		<div class="product">
+			<div class="inner">
+				<img src="images/knuckle-head.png" alt="Knucklehead">
+				<h5>Knucklehead</h5>
+				<p>Medium<br>Sure to Delight!</p>
+				<div class="button-group" data-grouptype="OR">
+					<button href="#" class="small button primary radius">Buy it now</button>
+					<button href="#" class="small button primary radius">Learn More</button>
+				</div>
+			</div><!--/inner-->
+		</div><!--/product card-->
+		<!--PRODUCT CARD-->
+		<div class="product">
+			<div class="inner">
+				<img src="images/marina-di-chioggia.png" alt="Marina Di Chioggia">
+				<h5>Marina di Chioggia</h5>
+				<p>Medium<br>Perfect for a display!</p>
+				<div class="button-group" data-grouptype="OR">
+					<button href="#" class="small button primary radius">Buy it now</button>
+					<button href="#" class="small button primary radius">Learn More</button>
+				</div>
+			</div><!--/inner-->
+		</div><!--/product card-->
+		<!--PRODUCT CARD-->
+		<div class="product">
+			<div class="inner">
+				<img src="images/munchkin.png" alt="Munchkin">
+				<h5>Munchkin</h5>
+				<p>Small<br>A classic family favorite.</p>
+				<div class="button-group" data-grouptype="OR">
+					<button href="#" class="small button primary radius">Buy it now</button>
+					<button href="#" class="small button primary radius">Learn More</button>
+				</div>
+			</div><!--/inner-->
+		</div><!--/product card-->
+		<!--PRODUCT CARD-->
+		<div class="product">
+			<div class="inner">
+				<img src="images/new-england-pie-o.png" alt="New England Pie">
+				<h5>New England Pie</h5>
+				<p>Medium - ORGANIC<br>Premium baking pumpkin.</p>
+				<div class="button-group" data-grouptype="OR">
+					<button href="#" class="small button primary radius">Buy it now</button>
+					<button href="#" class="small button primary radius">Learn More</button>
+				</div>
+			</div><!--/inner-->
+		</div><!--/product card-->
+		<!--PRODUCT CARD-->
+		<div class="product">
+			<div class="inner">
+				<img src="images/polar-bear.png">
+				<h5>Polar Bear</h5>
+				<p>Large<br>Perfect for displays.</p>
+				<div class="button-group" data-grouptype="OR">
+					<button href="#" class="small button primary radius">Buy it now</button>
+					<button href="#" class="small button primary radius">Learn More</button>
+				</div>
+			</div><!--/inner-->
+		</div><!--/product card-->
+		<!--PRODUCT CARD-->
+		<div class="product">
+			<div class="inner">
+				<img src="images/racer.png" alt="Racer">
+				<h5>Racer</h5>
+				<p>Large to Jumbo<br>Perfect for Jack O'Lanterns!</p>
+				<div class="button-group" data-grouptype="OR">
+					<button href="#" class="small button primary radius">Buy it now</button>
+					<button href="#" class="small button primary radius">Learn More</button>
+				</div>
+			</div><!--/inner-->
+		</div><!--/product card-->
+		<!--PRODUCT CARD-->
+		<div class="product">
+			<div class="inner">
+				<img src="images/rouge-vif-detampes.png" alt="Rouge Vif Detampes">
+				<h5>Rouge vif d'Etampes</h5>
+				<p>Jumbo<br>Beautiful red-orange color!</p>
+				<div class="button-group" data-grouptype="OR">
+					<button href="#" class="small button primary radius">Buy it now</button>
+					<button href="#" class="small button primary radius">Learn More</button>
+				</div>
+			</div><!--/inner-->
+		</div><!--/product card-->
+		<!--PRODUCT CARD-->
+		<div class="product">
+			<div class="inner">
+				<img src="images/speckled-hound.png" alt="Speckled Hound">
+				<h5>Speckled Hound</h5>
+				<p>Medium<br>Perfect for a display.</p>
+				<div class="button-group" data-grouptype="OR">
+					<button href="#" class="small button primary radius">Buy it now</button>
+					<button href="#" class="small button primary radius">Learn More</button>
+				</div>
+			</div><!--/inner-->
+		</div><!--/product card-->
+	</div><!--/row-->
+</div><!--/leaves back-->
 
 <!--Footer Nav-->
-<div class="row edge--top">
-    <div class="large-12 columns">
-    	<div class="large-1 columns">
-    		<img src="images/Pumpkin-icon.png">
-    	</div>
-    	<div class="large-5 columns">
-    		<ul>
-    			<li><a href="#">About Us</a></li>
-    			<li><a href="#">Blog</a></li>
-    			<li><a href="#">Store Policies</a></li>
-    			<li><a href="#">FAQ</a></li>
-    			<li><a href="#">Contact Us</a></li>
-    		</ul>
-    	</div>
-    	<div class="large-6 columns">
-    		<p>&copy; <script language="Javascript">
-// Perpetual Copyright Date so that it never has to be updated ever AGAIN!
-var mydate=new Date();
-var year=mydate.getYear();
-if (year < 1000) year+=1900;
-document.write(year+' Pumpkin Patch')
-</script></p>
-<p class="subscript">All photos http://www.johnnyseeds.com</p>
-		</div>
-    </div>
-</div>
+<div class="edge--top -primary">
+	<div class="row">
+	    <div class="large-12 columns">
+	    	<div class="large-1 columns">
+	    		<img src="images/Pumpkin-icon-dark.png">
+	    	</div>
+	    	<div class="large-5 columns">
+	    		<ul>
+	    			<li><a href="#">About Us</a></li>
+	    			<li><a href="#">Blog</a></li>
+	    			<li><a href="#">Store Policies</a></li>
+	    			<li><a href="#">FAQ</a></li>
+	    			<li><a href="#">Contact Us</a></li>
+	    		</ul>
+	    	</div>
+	    	<div class="large-6 columns">
+				<p>&copy; <script language="Javascript">
+					// Perpetual Copyright Date so that it never has to be updated ever AGAIN!
+					var mydate=new Date();
+					var year=mydate.getYear();
+					if (year < 1000) year+=1900;
+					document.write(year+' Pumpkin Patch')
+					</script></p>
+				<p class="subscript">All photos http://www.johnnyseeds.com</p>
+			</div><!--/6-->
+	    </div><!--/12-->
+	</div><!--/row-->
+</div><!--/edge top-->
 
 <!--SCRIPTS-->
 <script src="js/jquery/dist/jquery.min.js"></script>
