@@ -73,8 +73,11 @@
 	background-size: cover;
 }
 
-.leaves-back .row {
-	background-color: lighten($primary-color, 40%);
+.leaves-back {
+	.row {
+		background-color: lighten($primary-color, 60%);
+		border-radius: 8px;
+	}
 }
 
 .detail {
