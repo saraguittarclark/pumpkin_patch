@@ -43,11 +43,15 @@
 		h5 {
 			font-size: 1rem;
 			font-weight: bolder;
-			margin-left: 5px;
 		}
 		p {
+			font-size: smaller;
 			position: absolute;
-			top: 125px;
+			left: 120px;
+		}
+
+		span {
+			display: none;
 		}
 
 
