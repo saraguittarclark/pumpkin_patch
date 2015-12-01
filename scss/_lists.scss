@@ -61,3 +61,40 @@ ul .buttons {
 	display: inline-block;
 	padding: 5px;
 }
+
+.checkout {
+	// img{
+	// 	vertical-align: text-top;
+	// }
+	span {
+		font-size: 1rem;
+	}
+	a {
+		background-color: $white;
+		font-size: 1rem;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin: 5px;
+	}
+	li {
+		padding-top: 20px;
+	}
+	@media (max-width: 820px) {
+		h2 {
+			font-size: smaller;
+		}
+
+		a {
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		img {
+			vertical-align: text-top;
+		}
+	}
+}

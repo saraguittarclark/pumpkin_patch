@@ -92,6 +92,46 @@ h1 {
 	padding-left: 15px;
 }
 
-#also p {
+#also {
+	padding-top: 10px;
+	p {
 	font-size: smaller;
+	}
+	@media (max-width: 1024px) {
+		li {
+			float: left;
+			padding-right: 10px;
+		}
+	}
+	@media (max-width: 500px) {
+		li {
+			height: auto;
+			width: 80px;
+		}
+	}
 }
+
+#information {
+	@media (max-width: 640px) {
+		p {
+			text-align: center;
+		}
+		span {
+			display: none;
+		}
+	}
+}
+
+#total {
+	span {
+		font-size: smaller;
+	}
+}
+// .opposite {
+// 		background-color: $white;
+// 		color: $secondary-color;
+// 	}
+// 	a:hover {
+// 		background-color: $smoke;
+// 	}
+// }
